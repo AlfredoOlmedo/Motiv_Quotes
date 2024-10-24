@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: Tahoma;
+    background-color: #0C4459;
+    color: #ffffff;
+    line-height: 1.3;
+}
+.containerMain {
+  display:flex;  
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.containerQuotes {
+    margin: 0% 10% 0% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    padding-top: 30%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+h2 {
+    padding-top: 5%;
+    font-size: 1rem;
+    text-align: center;
+}
+.containerDate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+h3{
+    padding-bottom: 5%;
+    font-size: 0.7rem;
+    text-align: center;
+}
