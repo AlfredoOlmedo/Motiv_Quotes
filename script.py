@@ -10,7 +10,7 @@ frases_por_autor = {}
 
 # Separar cada frase por el guion y agruparlas por autor
 for frase in frases:
-    cita autor = frase.split(" - ")
+    cita = frase.split(" - ")
     autor = autor.strip()  # Eliminar posibles espacios
     if autor in frases_por_autor:
         frases_por_autor[autor].append(cita)
