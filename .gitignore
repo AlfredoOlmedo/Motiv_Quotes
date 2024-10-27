@@ -1,1 +1,7 @@
 .vscode
+__pycache__/
+*.py[cod]
+*.so
+*.log
+*.sqlite3
+.env
