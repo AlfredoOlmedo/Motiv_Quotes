@@ -40,6 +40,9 @@ h2 {
 }
 h3{
     padding-bottom: 5%;
+}
+.hour_dom{
     font-size: 0.7rem;
     text-align: center;
+    padding-bottom: 5%;
 }
