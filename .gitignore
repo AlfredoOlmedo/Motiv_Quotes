@@ -1,7 +1,13 @@
+script.py
 .vscode
+
+# Excluir directorios __pycache__
 __pycache__/
-*.py[cod]
-*.so
+data/__pycache__/
+
+# Excluir archivos compilados de Python
+*.pyc
+
+# Excluir otros archivos temporales o de sistema
 *.log
-*.sqlite3
-.env
+.DS_Store

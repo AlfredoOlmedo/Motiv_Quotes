@@ -3,6 +3,7 @@ function actualTime() {
     const actual_Time = new Date();
     return actual_Time.toLocaleTimeString();
 }
+
 let hour_dom = document.getElementById('hour_dom');
 hour_dom.innerHTML = `${actualTime()}`;
 

@@ -1,8 +1,8 @@
 # Lista de frases con autores
 frases = [
-"Anger if not restrained is frequently more hurtful to us than the injury that provokes it. - Seneca"
-"To love only what happens what was destined. No greater harmony. - Marcus Aurelius"
-"If you want to improve be content to be thought foolish and stupid. - Zeno of Citium"
+    "Anger if not restrained is frequently more hurtful to us than the injury that provokes it. - Seneca",
+    "To love only what happens what was destined. No greater harmony. - Marcus Aurelius",
+    "If you want to improve, be content to be thought foolish and stupid. - Zeno of Citium"
 ]
 
 # Diccionario para almacenar frases por autor
@@ -10,8 +10,8 @@ frases_por_autor = {}
 
 # Separar cada frase por el guion y agruparlas por autor
 for frase in frases:
-    cita = frase.split(" - ")
-    autor = autor.strip()  # Eliminar posibles espacios
+    cita, autor = frase.split(" - ")
+    autor = autor.strip()
     if autor in frases_por_autor:
         frases_por_autor[autor].append(cita)
     else:
@@ -31,7 +31,7 @@ for i in range(max_frases):
             frases_alternadas.append(f"{frases_por_autor[autor][i]} - {autor}")
 
 # Crear un nuevo archivo de texto y almacenar las frases alternadas
-with open("frases_alternadas.txt" "w") as file:
+with open("frases_alternadas.txt", "w") as file:
     for frase in frases_alternadas:
         file.write(frase + "\n")
 
